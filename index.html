@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+        * {
+        border-radius: 0 !important;
+        }
+
+        body {
+            /* background-image: url("https://cdn.pixabay.com/photo/2018/02/17/14/15/pattern-3160023_1280.jpg") */
+            background-color: azure;
+        }
+
+        .jumbotron {
+            /* background-color: transparent; */
+            background-image: url('https://frenchly.us/wp-content/uploads/sites/9/2018/12/google-translate.jpg');
+        }
+    </style>
+    <title>The Ultimate Translator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: 600;">The Ultimate Translator</h1>
+        <p></p>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="form-group col-8">
+            <label for="sel2">Select Language (select one):</label>
+            <select class="form-control" id="sel1">
+              <option value="">Choose Your Favorite Language</option>
+              <option>Yoda</option>
+              <option>Pirate</option>
+              <option>Minion</option>
+              <option>Dothraki</option>
+              <option>Valyrian</option>
+              <option>Chef</option>
+              <option>OldEnglish</option>
+              <option>Vulcan</option>
+              <option>Klingon</option>
+              <option>Shakespeare</option>
+            </select>
+          </div>
+          <div class="image col-4" width="300" height="300">
+            <!-- <img
+              src="https://images-na.ssl-images-amazon.com/images/I/81JOPUoLBPL._SX466_.jpg"
+              alt="Minion"
+            /> -->
+          </div>
+          <div class="form-group col-8">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+        </div>
+        <button type="button" class="btn btn-dark btn-lg" id="userClick">
+          Translate
+        </button>
+        <button type="button" class="btn btn-dark btn-lg" id="userListen">
+            Listen
+        </button>
+      </form>
+      <br />
+      <br />
+      <div class="card">
+            <div class="card-body well bg-light"></div>
+            </div>
+          </div>
+          <br />
+          <br />
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/app.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=MMHRCS1U"></script>
+</html>
