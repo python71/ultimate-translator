@@ -15,27 +15,31 @@
         }
 
         body {
-            /* background-image: url("https://cdn.pixabay.com/photo/2018/02/17/14/15/pattern-3160023_1280.jpg") */
             background-color: azure;
         }
 
         .jumbotron {
-            /* background-color: transparent; */
+            width: 100%;
             background-image: url('https://frenchly.us/wp-content/uploads/sites/9/2018/12/google-translate.jpg');
+        }
+
+        .container {
+          background-repeat: no-repeat;
+          background-attachment: local;
+          background-position: top right; 
         }
     </style>
     <title>The Ultimate Translator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid">
-        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: 600;">The Ultimate Translator</h1>
-        <p></p>
-      </div>
-
+    <div class="jumbotron jumbotron-fluid">
+      <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: 600;">The Ultimate Translator</h1>
+      <p></p>
+    </div>
+    <div class="container mt-8">
       <form>
         <div class="row">
-          <div class="form-group col-8">
+          <div class="form-group col-8 mb-4">
             <label for="sel2">Select Language (select one):</label>
             <select class="form-control" id="sel1">
               <option value="">Choose Your Favorite Language</option>
@@ -49,9 +53,11 @@
               <option>Vulcan</option>
               <option>Klingon</option>
               <option>Shakespeare</option>
+              <option>Fudd</option>
+              <option>Navi</option>
             </select>
           </div>
-          <div class="image col-4" width="300" height="300">
+          <div class="image col-5" width="300" height="300">
             <!-- <img
               src="https://images-na.ssl-images-amazon.com/images/I/81JOPUoLBPL._SX466_.jpg"
               alt="Minion"
@@ -71,7 +77,7 @@
       </form>
       <br />
       <br />
-      <div class="card">
+      <div class="card col-8 mt-4 mb-4">
             <div class="card-body well bg-light"></div>
             </div>
           </div>
