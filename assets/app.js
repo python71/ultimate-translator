@@ -26,9 +26,15 @@ $(document).ready(function(event) {
             .then(function(response) {
                 // prints the api call text to screen
                 text = translated.text(response.contents.translated);
+                console.log(response)
 
                 // now displays the listen button
                 listenBtn.show();
+            })
+            .catch((error) => {
+                if (error.status === 429) {
+                    text = translated.text("Only 5 requests per hour, Please try again later");
+                }
             })
     })
     listenBtn.on("click", function(e) {
