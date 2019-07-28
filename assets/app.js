@@ -33,7 +33,7 @@ $(document).ready(function(event) {
             })
             .catch((error) => {
                 if (error.status === 429) {
-                    text = translated.text("Only 5 requests per hour, Please try again later");
+                    text = translated.text("Only 5 requests per hour, Please try again later").css("color", "red");
                 }
             })
     })
